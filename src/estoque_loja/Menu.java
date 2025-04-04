@@ -2,9 +2,21 @@ package estoque_loja;
 
 import java.util.Scanner;
 
+import estoque_loja.model.Estoque;
+import estoque_loja.model.EstoqueLojaOnline;
+
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		
+		//TESTE DA CLASSE ESTOQUE LOJA ONLINE
+		// OBS: a quantidade não está saindo do estoque online - LEMBRAR DE ARRUMAR
+		EstoqueLojaOnline online1 = new EstoqueLojaOnline(3, "Azul", "PP", 70.0d, 0, 5);
+		online1.visualizarProdutos();
+		online1.removerDoEstoque(1);
+		online1.visualizarProdutos();
+
 		Scanner sc = new Scanner(System.in);
 
 		int opcao;
