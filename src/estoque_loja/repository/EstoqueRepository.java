@@ -2,7 +2,7 @@ package estoque_loja.repository;
 
 import estoque_loja.model.Estoque;
 
-public interface ContaRepository {
+public interface EstoqueRepository {
 	
 	public void cadastrarProduto(Estoque estoque);
 	public void listarTodos();
